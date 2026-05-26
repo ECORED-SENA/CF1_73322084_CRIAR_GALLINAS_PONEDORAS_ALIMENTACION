@@ -2,13 +2,19 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 20%
-    right: 10%
+    top: 30%
+    right: 70%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 60%
+    right: 75%
+  &-3
+    animation: float1 3.8s ease-in-out infinite alternate
+    position: absolute
+    top: 55%
+    right: 20%
+
 
 @keyframes float1
   0%
@@ -30,3 +36,343 @@
 
 figcaption
   font-weight: normal
+
+/* Colores de fondo*/
+.bg-color
+  &-1
+    background-color: #E7AF74 !important
+  &-2
+    background-color: #AEBA58 !important
+  &-3
+    background-color: #FFC94A !important    
+  &-4
+    background-color: #FF0011 !important
+  &-5
+    background-color: #DFE3BC !important
+  &-6
+    background-color: #FAEEE2 !important
+  &-7
+    background-color: #AEBA58 !important
+  &-8
+    background-color: #FFE9B5 !important
+  &-9
+    background-color: #565C2B !important
+  &-10
+    background-color: #EAF7F7 !important
+  &-11
+    background-color: #FCE9D4 !important
+  &-12
+    background-color: #CBF4EB !important
+  &-13
+    background-color: #D5EFEF !important
+  &-14
+    background-color: #FFC94A !important
+  &-15
+    background-image: url(../assets/curso/fondos/fondo1.svg)
+    background-repeat: no-repeat
+    margin-inline: -3.2rem !important
+    background-size: cover
+  &-16
+    background-image: url(../assets/curso/fondos/fondo2.svg)
+    background-repeat: no-repeat
+    margin-inline: -3.2rem !important
+  &-17
+    background-color: #F6F6F6 !important
+  &-18
+    background-color: #FFF !important
+  &-19
+    background-color: #eff1dd !important 
+/*Fin de Colores de fondo*/
+
+/* Ajuste para botones de Slider en Móviles */
+@media (max-width: $bp-max-sm)
+  .slyder-a__btn--sigt, .slyder-a__btn--atrs
+    width: 35px !important 
+    height: 35px !important
+    background-size: 10px !important 
+    opacity: 1 !important
+  
+  .slyder-a__bullets__item
+    width: 10px !important 
+    height: 10px !important
+    margin: 0 4px !important
+
+  .slyder-a__bullets
+    bottom: 10px !important 
+
+.boton *, 
+.boton--sm *, 
+.barra-avance__boton--regresar *, 
+.barra-avance__boton--regresar span,
+.barra-avance__boton--regresar i,
+.boton:hover *, 
+.boton--sm:hover *, 
+.boton:focus *, 
+.boton--sm:focus *, 
+.boton:active *, 
+.boton--sm:active *
+  color: #ffffff !important
+   
+  &.fa-brands:before, 
+  &.fa-regular:before, 
+  &.fa-solid:before, 
+  &.fa:before, 
+  &.fab:before, 
+  &.far:before, 
+  &.fas:before
+    color: #ffffff !important
+
+
+/* Código para los subtítulos que tienen imagenes */
+.titulo-con-imagen
+  display: flex
+  align-items: center
+  position: relative
+
+.titulo-con-imagen__fondo
+  background-color: $color-acento-contenido
+  border-radius: 10px
+  padding: 10px 20px
+  display: inline-flex
+  align-items: center
+
+.titulo-con-imagen__imagen
+  position: absolute
+  left: -20px
+  width: 50px
+
+.titulo-con-imagen__texto
+  margin: 0
+  padding-left: 20px
+/* Fin Código para los subtítulos que tienen imagenes */
+
+/*Pestanas */
+.tabs-c__tab--active
+  font-weight: bold
+
+.tabs-c__content-item
+  background-color: #faeee2
+  padding: 2rem
+
+.tabs-c
+  border-bottom: none !important
+
+.tabs-a__tab
+  background-color: #FDF0AC
+/*Pestanas*/
+
+/*Slideshows*/
+.bg-fondo
+  &-slider
+    background-image: url("../assets/curso/portada/fondo-banner-principal.png") !important
+    background-position: bottom
+    margin-inline: -3.2rem !important
+    background-repeat: no-repeat
+    background-size: cover
+.slyder-a__btn--sigt, .slyder-a__btn--atrs
+  background-color: #FF0011 !important
+.slyder-a__bullets__item--active 
+  background-color: #FF0011 !important
+  border-color: #FF0011
+.slyder-a__bullets__item
+  background-color: #FF0011
+  border: 1px solid #FF0011
+.bloque-texto-b.color-secundario:before
+  background-color: #CBE7E8
+.tarjeta-numerada.color-primario
+  border-color: #F3F0EA
+  background-color: #F3F0EA
+.tarjeta-numerada.color-primario .tarjeta-numerada__numero
+  background-color: #FD9826
+.tarjeta-numerada__numero
+  top: 35%
+/*Slideshows*/
+
+/* Ajuste para botones de Slider en Móviles */
+@media (max-width: $bp-max-sm)
+  .slyder-a__btn--sigt, .slyder-a__btn--atrs
+    width: 35px !important 
+    height: 35px !important
+    background-size: 10px !important 
+    opacity: 1 !important
+  
+  .slyder-a__bullets__item
+    width: 10px !important 
+    height: 10px !important
+    margin: 0 4px !important
+
+  .slyder-a__bullets
+    bottom: 10px !important 
+
+/*Accordion*/
+.tarjeta.acordeonA
+  background-color: #DFE3BC
+
+.acordion__activo
+  background-color: #FFE9B5 !important
+
+.acordion__accion__btn--a
+  background-color: #FF0011 !important
+
+.acordion_titulo
+  color: #fff !important
+
+.acordeonA
+  position: relative  
+  width: 100%  
+  p
+    padding-left: 0 !important  
+  .lista-ul
+    padding-left: 4.3rem
+    li
+      display: flex
+      align-items: flex-start
+      i
+        padding-top: 4px
+ 
+  .fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before
+    color: #ffffff !important
+
+.acordeon-tipo-2
+  .tarjeta.acordeonA
+    background-color: #DFE3BC
+  .acordion__activo
+    background-color: #FFE9B5 !important
+  .acordion__accion__btn--a
+    background-color: #FF0011 !important
+  .acordion_titulo
+    color: #fff !important
+  .acordeonA
+    p
+      padding-left: 3.5rem !important 
+
+    // FORZAR ÍCONOS BLANCOS SOLO EN EL ACORDEÓN TIPO 2
+    .fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before
+      color: #ffffff !important
+/*Fin Accordion*/
+
+/* Tablas */
+
+.tabla-a
+  overflow-x: auto !important 
+  -webkit-overflow-scrolling: touch 
+  
+  table
+    min-width: 600px 
+    table-layout: auto
+    
+    thead
+      border-color: $color-acento-contenido
+      background-color: $color-acento-contenido !important
+      
+    th, td
+      text-align: start
+      padding: 15px 
+      
+    tbody
+      tr:nth-child(odd)
+        background-color: #F6F6F6
+      tr:nth-child(even)
+        background-color: #FFFFFF
+
+.separador__tabla
+  background-color: #F6F6F6
+
+
+/* Tablas */
+
+
+
+/*Audio*/
+.bg-custom-teal
+  background-color: #2D5D6D !important 
+  position: relative
+  overflow: hidden
+  
+.bg-custom-dark-teal
+  background-color: #565C2B !important
+
+.border-lemon
+  border: 4px solid #d4eb79 !important
+  border-radius: 15px
+
+/*Fin Audio*/
+
+
+/*Vinetas con numeros*/
+.tabs-c__tab--active
+  font-weight: bold
+
+.tabs-c__content-item
+  background-color: #DFE3BC
+  padding: 2rem
+
+.tabs-c
+  border-bottom: none !important
+
+.tabs-a__tab
+  background-color: #E5E2D3
+/*Vinetas con numeros*/
+
+ /* Código para los carruseles */
+.carousel-bg
+  .fas
+    &.fa-chevron-left, &.fa-chevron-right
+      display: inline-flex !important
+      align-items: center !important
+      justify-content: center !important
+      width: 45px !important
+      height: 45px !important
+      min-width: 45px !important
+      min-height: 45px !important
+      padding: 0 !important
+      margin: 0 !important
+      border-radius: 50% !important
+      background-color: #E63946 !important
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+      font-size: 16px      
+      color: #ffffff !important
+      &::before
+        color: #ffffff !important      
+      @media screen and (max-width: $bp-max-md)
+        background-color: transparent !important
+        box-shadow: none !important
+        font-size: 20px !important
+        color: #E63946 !important 
+        &::before
+          color: #E63946 !important
+
+.bordes
+  border: 1px solid #CBD5E0 !important
+/* Fin Código para los carruseles */
+ 
+
+.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
+  color: black !important
+
+.fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before
+  color: black !important
+.titulo-principal.color-acento-contenido .titulo-principal__numero span
+  color: black !important
+
+.color-vinotinto-custom i.fas 
+  color: #AD9721 !important
+  &::before 
+    color: #AD9721 !important
+
+
+
+
+a.btn.btn-danger.w-buttons
+  i.fas
+    color: #ffffff !important
+    
+    // Forzamos el pseudo-elemento :before de FontAwesome de manera aislada
+    &.fa-brands:before, 
+    &.fa-regular:before, 
+    &.fa-solid:before, 
+    &.fa:before, 
+    &.fab:before, 
+    &.far:before, 
+    &.fas:before
+      color: #ffffff !important
