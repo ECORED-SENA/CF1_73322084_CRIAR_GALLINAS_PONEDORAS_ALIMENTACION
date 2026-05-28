@@ -4,7 +4,7 @@ export default {
       'Manejo integral operativo y sanitario en explotaciones avícolas de postura',
     Description:
       'El curso brinda formación técnica, biológica y práctica para el manejo integral de gallinas ponedoras en sistemas alternativos. Aborda anatomía, comportamiento, bienestar animal, razas y selección. Fortalece competencias en sanidad, bioseguridad y uso responsable de medicamentos. Además, desarrolla habilidades en manejo productivo, promoviendo la producción sostenible y oportunidades en el ámbito rural.',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.svg'),
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
